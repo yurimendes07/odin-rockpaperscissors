@@ -7,11 +7,11 @@ function getComputerChoice() {
   
   switch (choiceNumber) {
     case 0:
-      return "Rock";
+      return "rock";
     case 1:
-      return "Paper";
+      return "paper";
     case 2:
-      return "Scissors";
+      return "scissors";
   }
 }
 
@@ -19,3 +19,24 @@ function getHumanChoice() {
   const choice = prompt("What will you choose? (Rock/Paper/Scissors) ");
   return choice;
 }
+
+function playRound(humanChoice, computerChoice) {
+  humanChoice = humanChoice.toLowerCase();
+
+  if (humanChoice === computerChoice) {
+    console.log(`Tie. ${humanChoice} has the same power as ${computerChoice}`)
+  } else if (humanChoice === "paper" && computerChoice === "rock"
+          || humanChoice === "rock" && computerChoice === "scissors"
+          || humanChoice === "scissors" && computerChoice === "paper") {
+    console.log(`You won!!! ${humanChoice} beats ${computerChoice}`);
+    humanScore++;
+  } else {
+    console.log(`You lost :( ${computerChoice} beats ${humanChoice}`);
+    computerScore++;
+  }
+}
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
+
+playRound(humanSelection, computerSelection);
