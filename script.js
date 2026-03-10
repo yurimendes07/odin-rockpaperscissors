@@ -11,3 +11,8 @@ function getComputerChoice() {
       return "Scissors";
   }
 }
+
+function getHumanChoice() {
+  const choice = prompt("What will you choose? (Rock/Paper/Scissors) ");
+  return choice;
+}
