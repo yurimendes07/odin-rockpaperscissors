@@ -3,9 +3,28 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors</title>
   </head>
   <body>
+    <div class="content">
+      <section class="choice-panel">
+        <h2 id="narrator">What is your choice?</h2>
+        <div class="selection">
+          <button class="select-btn" type="button" id="rockBtn">
+            <img class="select-img" src="./src/images/Rock.png" alt="Rock">
+          </button>
+          <button class="select-btn" type="button" id="paperBtn">
+            <img class="select-img" src="./src/images/Paper.png" alt="Paper">
+          </button>
+          <button class="select-btn" type="button" id="scissorsBtn">
+            <img class="select-img" src="./src/images/Scissors.png" alt="Scissors">
+          </button>
+        </div>
+      </section>
+      <img id="player" class="right-hand" src="./src/images/Rock.png" alt="Player hand">
+      <img id="computer" class="left-hand" src="./src/images/Rock.png" alt="Computer hand">
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>

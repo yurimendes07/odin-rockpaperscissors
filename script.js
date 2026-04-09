@@ -36,20 +36,20 @@ function playRound(humanChoice, computerChoice) {
   }
 }
 
-function playGame() {
-  for (let i=0; i < 5; i++) {
-    const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
-
-    playRound(humanSelection, computerSelection);
-    console.log(`Player: ${humanScore} | Computer: ${computerScore}`)
-  }
-
-  if (humanScore === computerScore) {
-    console.log(`${humanScore}/${computerScore}, hard battle, you both were good. Tie!`)
-  } else if (humanScore < computerScore) {
-    console.log(`${humanScore}/${computerScore}, you tried, but the computer was better. Better luck next time!`)
-  } else {
-    console.log(`${humanScore}/${computerScore}, nice!!! You did it, you beat the computer.`)
-  }
-}
+// function playGame() {
+//   for (let i=0; i < 5; i++) {
+//     const humanSelection = getHumanChoice();
+//     const computerSelection = getComputerChoice();
+//
+//     playRound(humanSelection, computerSelection);
+//     console.log(`Player: ${humanScore} | Computer: ${computerScore}`)
+//   }
+//
+//   if (humanScore === computerScore) {
+//     console.log(`${humanScore}/${computerScore}, hard battle, you both were good. Tie!`)
+//   } else if (humanScore < computerScore) {
+//     console.log(`${humanScore}/${computerScore}, you tried, but the computer was better. Better luck next time!`)
+//   } else {
+//     console.log(`${humanScore}/${computerScore}, nice!!! You did it, you beat the computer.`)
+//   }
+// }
